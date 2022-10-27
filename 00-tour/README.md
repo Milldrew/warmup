@@ -10,14 +10,15 @@
 6.  Make the heroes component display the heroes name in an h2 header
 7.  Show the heroes component by adding it to the app component
 8.  In core/types/tour-of-heroes.types.ts create a Hero interface with an id and a name. Add the type to the hero property.
-9.  Display the heroes details, id and name in the heros.component.html
-10. Use the uppercase pipe to format the header to be all uppercase
-11. Add the FormsModule to the the app module.
-12. Refactor the heroes details area to be an input and label for for the heroes name
+9.  Use the uppercase pipe to format the header to be all uppercase
+10. Add the FormsModule to the the app module.
+11. Refactor the heroes details area to be an input and label for for the heroes name
 
 ```
-<div>
-  <label for="name">Hero name: </label>
-  <input id="name" [(ngModel)]="hero.name" placeholder="name">
-</div>
+<form>
+  <div class="input-group">
+    <label class="input-group-text"  for="name">Hero name: </label>
+    <input id="name" [(ngModel)]="hero.name" placeholder="name" type=text  class="form-control">
+  </div>
+</form>
 ```
