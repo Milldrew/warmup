@@ -1,5 +1,6 @@
 import { HEROES } from '../core/data/heroes';
 import { Component, OnInit } from '@angular/core';
+import { Hero } from '../core/types/hero';
 
 @Component({
   selector: 'app-heroes',
@@ -7,8 +8,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./heroes.component.scss'],
 })
 export class HeroesComponent implements OnInit {
+  selectedHero: Hero;
   heroes = HEROES;
   constructor() {}
 
   ngOnInit(): void {}
+  onSelectHero(hero: Hero) {}
 }

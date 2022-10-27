@@ -1,7 +1,7 @@
 <h2>My Heroes</h2>
 <ul class="list-group">
   <ng-container *ngFor="let hero of heroes">
-    <li class="list-group-item hero-list-group">
+    <li (click)="onSelectHero(hero)" class="list-group-item hero-list-group">
       <span class="hero-badge-item bg-primary round-pill">{{ hero.id }}</span>
       <span> </span>
       <span>{{ hero.name }}</span>

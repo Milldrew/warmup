@@ -22,3 +22,37 @@
   </div>
 </form>
 ```
+
+ <h2>Display a List</h2>
+ 
+12. Make a data file in core/data/mock-heroes.ts
+
+```
+import { Hero } from './hero';
+export const HEROES: Hero[] = [
+ { id: 12, name: 'Dr. Nice' },
+ { id: 13, name: 'Bombasto' },
+ { id: 14, name: 'Celeritas' },
+ { id: 15, name: 'Magneta' },
+ { id: 16, name: 'RubberMan' },
+ { id: 17, name: 'Dynama' },
+ { id: 18, name: 'Dr. IQ' },
+ { id: 19, name: 'Magma' },
+ { id: 20, name: 'Tornado' }
+];
+```
+
+13. Import heroes into the heroes component constructor and assign it to a property named heroes
+14. Refactor the heroes template to
+
+```
+<h2>My Heroes</h2>
+<ul class="list-group">
+  <li>
+    <button type="button">
+      <span class="list-group-item-primary">{{hero.id}}</span>
+      <span class="list-group-item-light">{{hero.name}}</span>
+    </button>
+  </li>
+</ul>
+```
