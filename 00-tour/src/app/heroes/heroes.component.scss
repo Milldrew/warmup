@@ -2,9 +2,14 @@
   display: grid;
   padding: 0px;
   grid-template-columns: 2fr 1fr 20fr;
+  cursor: pointer;
 }
 
 .hero-badge-item {
   text-align: center;
   color: #ffffff;
+}
+
+.selected {
+  background-color: orange;
 }
