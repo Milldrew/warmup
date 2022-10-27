@@ -1,4 +1,6 @@
  <h1>Angular Warm up</h1>
+ 
+  <h2> The hero editor</h2>
 
 1.  Change the title to Tour of Heroes and move it ot the top in the component
 2.  In the template make the title and h1 header
@@ -7,5 +9,15 @@
 5.  add a property named heroName and assign it to a string
 6.  Make the heroes component display the heroes name in an h2 header
 7.  Show the heroes component by adding it to the app component
-8.  In core/types/tour-of-heroes.types.ts create a Hero interface with an id an a name
-9.
+8.  In core/types/tour-of-heroes.types.ts create a Hero interface with an id and a name. Add the type to the hero property.
+9.  Display the heroes details, id and name in the heros.component.html
+10. Use the uppercase pipe to format the header to be all uppercase
+11. Add the FormsModule to the the app module.
+12. Refactor the heroes details area to be an input and label for for the heroes name
+
+```
+<div>
+  <label for="name">Hero name: </label>
+  <input id="name" [(ngModel)]="hero.name" placeholder="name">
+</div>
+```
