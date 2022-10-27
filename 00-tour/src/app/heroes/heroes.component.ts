@@ -7,7 +7,7 @@ import { Hero } from '../core/types/hero';
   styleUrls: ['./heroes.component.scss'],
 })
 export class HeroesComponent implements OnInit {
-  heroesName: Hero = { name: 'Angular King', id: 1 };
+  hero: Hero = { name: 'Angular King', id: 1 };
   constructor() {}
 
   ngOnInit(): void {}
