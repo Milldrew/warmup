@@ -6,4 +6,6 @@
 4.  Generate a component named heroes
 5.  add a property named heroName and assign it to a string
 6.  Make the heroes component display the heroes name in an h2 header
-7.  Show the heroes component by Ading it to the
+7.  Show the heroes component by adding it to the app component
+8.  In core/types/tour-of-heroes.types.ts create a Hero interface with an id an a name
+9.
