@@ -1,6 +1,6 @@
  <h1>Angular Warm up</h1>
  
-  <h2> The hero editor</h2>
+  <h2> The Hero Editor</h2>
 
 1.  Change the title to Tour of Heroes and move it ot the top in the component
 2.  In the template make the title and h1 header
