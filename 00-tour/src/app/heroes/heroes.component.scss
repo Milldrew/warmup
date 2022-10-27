@@ -1,11 +1,10 @@
-span.badge {
-}
-li.list-group-item {
+.hero-list-group {
   display: grid;
   padding: 0px;
   grid-template-columns: 2fr 1fr 20fr;
 }
 
-.hero-item {
+.hero-badge-item {
   text-align: center;
+  color: #ffffff;
 }
