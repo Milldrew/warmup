@@ -8,13 +8,16 @@ import { Hero } from '../core/types/hero';
   styleUrls: ['./heroes.component.scss'],
 })
 export class HeroesComponent implements OnInit {
-  selectedHero: Hero;
+  selectedHero: Hero | null;
   heroes = HEROES;
   constructor() {}
 
   ngOnInit(): void {}
   onSelectHero(hero: Hero) {
-    this.selectedHero = hero;
-    this.heroes = [...this.heroes];
+    if (this.selectedHero === hero) {
+      this.selectedHero = null;
+    } else {
+      this.selectedHero = hero;
+    }
   }
 }
