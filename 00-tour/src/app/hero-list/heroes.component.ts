@@ -7,7 +7,7 @@ import { Hero } from '../core/types/hero';
   templateUrl: './heroes.component.html',
   styleUrls: ['./heroes.component.scss'],
 })
-export class HeroesComponent implements OnInit {
+export class HeroListComponent implements OnInit {
   selectedHero: Hero | null;
   heroes = HEROES;
   constructor() {}

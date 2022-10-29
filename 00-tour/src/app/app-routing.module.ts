@@ -1,7 +1,7 @@
 import { RouterModule, Routes } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeroesComponent as HeroesListComponent } from './heroes/heroes.component';
+import { HeroListComponent } from './hero-list/heroes.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 
 const routes: Routes = [
@@ -11,7 +11,7 @@ const routes: Routes = [
   },
   {
     path: 'list',
-    component: HeroesListComponent,
+    component: HeroListComponent,
   },
   {
     path: '**',
