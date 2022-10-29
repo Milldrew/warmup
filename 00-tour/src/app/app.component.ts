@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Hero } from './core/types/hero';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Tour of Heroes';
+  selectedHero: Hero;
+
+  handleSelectedHero(hero: any) {
+    console.log(hero);
+  }
 }
