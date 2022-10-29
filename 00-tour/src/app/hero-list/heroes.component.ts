@@ -1,5 +1,5 @@
 import { HEROES } from '../core/data/heroes';
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 import { Hero } from '../core/types/hero';
 
 @Component({
@@ -8,9 +8,13 @@ import { Hero } from '../core/types/hero';
   styleUrls: ['./heroes.component.scss'],
 })
 export class HeroListComponent implements OnInit {
+  @Output()
+  selectedHeroEmitter: EventEmitter<Hero | null>;
   selectedHero: Hero | null;
   heroes = HEROES;
-  constructor() {}
+  constructor() {
+    this.selectedHeroEmitter = new EventEmitter();
+  }
 
   ngOnInit(): void {}
   onSelectHero(hero: Hero) {
@@ -19,5 +23,6 @@ export class HeroListComponent implements OnInit {
     } else {
       this.selectedHero = hero;
     }
+    this.selectedHeroEmitter.emit(this.selectedHero);
   }
 }
