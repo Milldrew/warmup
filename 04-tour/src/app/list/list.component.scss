@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+li.list-group-item {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 2fr 1fr 10fr;
+  padding: 0;
+}
+li > .badge-list-item {
+  color: #fff;
+}
+
+li.list-group-item:hover {
+  background-color: #00000005;
+}
+
+li.list-group-item.active:hover {
+  background-color: #7777ff;
+}

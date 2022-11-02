@@ -1,0 +1,23 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-list-item {
+  display: grid;
+  grid-template-columns: 2fr 1fr 10fr;
+  padding: 0;
+  cursor: pointer;
+}
+
+.list-item-badge {
+  color: #fff;
+}
+
+.hero-list-item:hover {
+  background-color: #00000005;
+}
+.hero-list-item.active:hover {
+  background-color: #8888ff;
+}

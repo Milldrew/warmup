@@ -1,0 +1,16 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+li.list-group-item {
+  display: grid;
+
+  grid-template-columns: 2fr 1fr 10fr;
+  padding: 0;
+  cursor: pointer;
+}
+
+.list-item-badge {
+  color: #fff;
+}

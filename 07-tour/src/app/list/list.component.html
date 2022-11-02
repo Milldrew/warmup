@@ -1,0 +1,14 @@
+<h2>Hero List</h2>
+<ul class="list-group">
+  <ng-container *ngFor="let hero of heroes">
+    <li
+      [class.active]="selectedHero === hero"
+      class="list-group-item hero-list-item"
+      (click)="handleClickedHero(hero)"
+    >
+      <span class="list-item-badge bg-primary">{{ hero.id }}</span>
+      <span></span>
+      <span>{{ hero.name }} </span>
+    </li>
+  </ng-container>
+</ul>

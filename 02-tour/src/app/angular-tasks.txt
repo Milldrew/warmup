@@ -1,0 +1,26 @@
+• build a list                                                                                                                  
+  o Title the list with an h2                                                                                          
+  o create a list that use bootstrap classes                                                                          
+    Bootstrap classes                                                                                                                  
+    - list-group                                                                                                           
+    - list-group-item                                                                                                           
+    custom classes                                                                                                           
+
+.hero-list-group {
+  display: grid;
+  padding: 0px;
+  grid-template-columns: 2fr 1fr 20fr;
+  cursor: pointer;
+}
+
+.list-item-text:hover {
+  background-color: #00000003;
+}
+
+.hero-badge-item {
+  text-align: center;
+  color: #ffffff;
+}
+
+• Bring in the hero data and list the data
+• Build a badge for the list using .hero-badgeitem and span

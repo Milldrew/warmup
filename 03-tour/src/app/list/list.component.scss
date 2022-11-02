@@ -1,0 +1,34 @@
+ul {
+  padding: 0;
+}
+h2 {
+  text-align: center;
+}
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-list-item {
+  cursor: pointer;
+  display: grid;
+  grid-template-columns: 2fr 1fr 10fr;
+  padding: 0;
+}
+
+.list-item-badge {
+  color: #fff;
+}
+
+li.list-group-item.hero-list-item:hover {
+  background-color: #00000005;
+}
+li.list-group-item.hero-list-item.active:hover {
+  background-color: #8888ff;
+}
+
+#hero-list-container {
+  margin-left: auto;
+  margin-right: auto;
+}
