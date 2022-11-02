@@ -1,0 +1,25 @@
+import { Component } from '@angular/core';
+import { HEROES } from '../core/data/heroes';
+import { Hero } from '../core/types/hero';
+
+@Component({
+  selector: 'hero-list',
+  templateUrl: './list.component.html',
+  styleUrls: ['./list.component.scss'],
+})
+export class ListComponent {
+  heroes: Hero[];
+  selectedHero: Hero | null;
+  constructor() {
+    this.heroes = HEROES;
+  }
+
+  handleSelectedHero(clickedHero: Hero) {
+    if (this.selectedHero === clickedHero) {
+      this.selectedHero = null;
+
+    } else{
+      this.selectedHero = clickedHero
+    }
+  }
+}
